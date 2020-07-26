@@ -1,0 +1,27 @@
+{
+  "name": "los-mil",
+  "version": "1.0.0",
+  "description": "Los Mil Distribuidora",
+  "main": "index.js",
+  "scripts": {
+    "buildcss": "postcss src/css/tailwindcss.css -o public/build/main.css",
+    "watch": "postcss src/css/tailwindcss.css -o public/build/main.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/caxtorftw/los-mil.git"
+  },
+  "keywords": [],
+  "author": "caxtor",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/caxtorftw/los-mil/issues"
+  },
+  "homepage": "https://github.com/caxtorftw/los-mil#readme",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.14.0",
+    "autoprefixer": "^9.8.5",
+    "postcss-cli": "^7.1.1",
+    "tailwindcss": "^1.5.2"
+  }
+}
