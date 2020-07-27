@@ -1,3 +1,25 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+header {
+  background-image: linear-gradient(to right, rgba(0,0,0,.5), rgba(0,0,0,.5)), url('../../src/img/slider/local1.jpeg');
+}
+
+.nav-btn.is-active span:nth-child(2) {
+  opacity: 0;
+}
+
+.nav-btn.is-active span:nth-child(1) {
+  -webkit-transform: translateY(25px) rotate(45deg);
+  -ms-transform: translateY(25px) rotate(45deg);
+  -o-transform: translateY(25px) rotate(45deg);
+  transform: translateY(25px) rotate(45deg);
+}
+
+.nav-btn.is-active span:nth-child(3) {
+  -webkit-transform: translateY(-27px) rotate(-45deg);
+  -ms-transform: translateY(-27px) rotate(-45deg);
+  -o-transform: translateY(-27px) rotate(-45deg);
+  transform: translateY(-27px) rotate(-45deg);
+}

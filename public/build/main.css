@@ -6296,6 +6296,10 @@ video {
   font-size: 4rem;
 }
 
+.text-10xl {
+  font-size: 7rem;
+}
+
 .leading-3 {
   line-height: .75rem;
 }
@@ -17877,6 +17881,22 @@ video {
   transition-delay: 1000ms;
 }
 
+header {
+  background-image: linear-gradient(to right, rgba(0,0,0,.5), rgba(0,0,0,.5)), url('../../src/img/slider/local1.jpeg');
+}
+
+.nav-btn.is-active span:nth-child(2) {
+  opacity: 0;
+}
+
+.nav-btn.is-active span:nth-child(1) {
+  transform: translateY(25px) rotate(45deg);
+}
+
+.nav-btn.is-active span:nth-child(3) {
+  transform: translateY(-27px) rotate(-45deg);
+}
+
 @media (min-width: 640px) {
   .sm\:container {
     width: 100%;
@@ -23582,6 +23602,10 @@ video {
 
   .sm\:text-6xl {
     font-size: 4rem;
+  }
+
+  .sm\:text-10xl {
+    font-size: 7rem;
   }
 
   .sm\:leading-3 {
@@ -40873,6 +40897,10 @@ video {
     font-size: 4rem;
   }
 
+  .md\:text-10xl {
+    font-size: 7rem;
+  }
+
   .md\:leading-3 {
     line-height: .75rem;
   }
@@ -58162,6 +58190,10 @@ video {
     font-size: 4rem;
   }
 
+  .lg\:text-10xl {
+    font-size: 7rem;
+  }
+
   .lg\:leading-3 {
     line-height: .75rem;
   }
@@ -75449,6 +75481,10 @@ video {
 
   .xl\:text-6xl {
     font-size: 4rem;
+  }
+
+  .xl\:text-10xl {
+    font-size: 7rem;
   }
 
   .xl\:leading-3 {
