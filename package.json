@@ -22,6 +22,7 @@
     "@fortawesome/fontawesome-free": "^5.14.0",
     "autoprefixer": "^9.8.5",
     "postcss-cli": "^7.1.1",
-    "tailwindcss": "^1.5.2"
+    "swiper": "^6.0.4",
+    "tailwindcss": "^1.6.0"
   }
 }

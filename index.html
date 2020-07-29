@@ -1,59 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Los Mil | Distribuidora</title>
-    <link
-      rel="stylesheet"
-      href="./node_modules/@fortawesome/fontawesome-free/css/all.min.css"
-    />
-    <link rel="stylesheet" href="./public/build/main.css" />
-  </head>
-  <body>
-    <header class="relative h-screen bg-cover flex items-center justify-center">
 
-      <!-- Navbar -->
-      <nav class="absolute top-0 left-0 right-0 h-20">
-        <div class="container mx-auto h-full flex items-center justify-between">
-          <a href="#">
-            <img
-              class="h-10 invisible"
-              src="./src/img/logo2.svg"
-              alt="los mil menu logo"
-            />
-          </a>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Los Mil | Distribuidora</title>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.min.css" />
+  <link rel="stylesheet" href="./node_modules/swiper/swiper-bundle.min.css">
+  <link rel="stylesheet" href="./public/build/main.css" />
+</head>
 
-          <!-- Burguer Button -->
-          <!-- GOTTA WORK ON HAMBURGUER -->
-          <div
-            class="nav-btn relative md:hidden p-2 w-16 h-16 flex flex-col justify-between cursor-pointer transition-all duration-300 border-2 border-gray-200"
-          >
-            <span
-              class="block h-2 bg-gray-200 rounded-full transition-all duration-200"
-            ></span>
-            <span
-              class="block h-2 bg-gray-200 rounded-full transition-all duration-200"
-            ></span>
-            <span
-              class="block h-2 bg-gray-200 rounded-full transition-all duration-200"
-            ></span>
-          </div>
+<body>
 
-        </div>
-      </nav>
+  <!-- START WELCOME SECTION -->
+  <header class="relative h-screen bg-cover bg-center bg-fixed flex items-center justify-center">
 
-      <!-- Hero Content -->
-      <div class="container mx-auto px-4">
-        <div class="">
-          <img class="h-40 mx-auto" src="./src/img/logo2.svg" alt="los mil hero logo" />
+    <!-- Navbar -->
+    <nav class="absolute top-0 left-0 right-0 h-20">
+
+      <div class="container mx-auto px-4 h-full flex items-center justify-between">
+
+        <!-- Logo -->
+        <a href="#">
+          <img class="nav__logo h-10 invisible" src="./src/img/logo.svg" alt="los mil menu logo" />
+        </a>
+
+        <!-- Burguer Button -->
+        <div
+          class="nav-btn relative md:hidden p-4 w-16 h-16 flex flex-col justify-around cursor-pointer transition-all duration-300 border rounded-sm">
+          <span class="block h-1 bg-white rounded-full transition-all duration-200"></span>
+          <span class="block h-1 bg-white rounded-full transition-all duration-200"></span>
+          <span class="block h-1 bg-white rounded-full transition-all duration-200"></span>
         </div>
 
+        <!-- Large screen Menu -->
+        <ul class="nav__menu hidden md:flex text-lg text-gray-400 uppercase">
+          <li>
+            <a href="#" class="relative px-3 py-1 hover:text-white transition-all duration-200">Inicio</a>
+          </li>
+          <li>
+            <a href="#"
+              class="relative px-3 py-1 hover:text-white ml-2 transition-all duration-200">Marcas</a>
+          </li>
+          <li>
+            <a href="#"
+              class="relative px-3 py-1 hover:text-white ml-2 transition-all duration-200">Ubicación</a>
+          </li>
+          <li>
+            <a href="#"
+              class="relative px-3 py-1 hover:text-white ml-2 transition-all duration-200">Contacto</a>
+          </li>
+        </ul>
+
+        <!-- Mobile menu -->
+        
 
       </div>
 
-    </header>
+    </nav>
 
-    <script src="./src/js/main.js"></script>
-  </body>
+    <!-- Hero Content -->
+    <div class="container mx-auto px-4">
+      <div>
+        <img class="hero__logo h-40 mx-auto" src="./src/img/logo2.svg" alt="los mil hero logo" />
+      </div>
+    </div>
+  </header>
+  <!-- END WELCOME SECTION -->
+
+
+  <main>
+
+    
+
+  </main>
+
+  <script src="./node_modules/swiper/swiper-bundle.min.js"></script>
+  <script src="./src/js/main.js"></script>
+</body>
+
 </html>

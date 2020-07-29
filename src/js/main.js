@@ -12,4 +12,19 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
+  const body = document.querySelector('body');
+  const navbar = document.querySelector('nav');
+  const navLogo = document.querySelector('.nav__logo');
+  const heroLogo = document.querySelector('.hero__logo');
+
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > navbar.offsetHeight) {
+      body.classList.add('nav-is-fixed');
+      navLogo.classList.remove('invisible');
+    } else {
+      body.classList.remove('nav-is-fixed');
+      navLogo.classList.add('invisible');
+    }
+  })
+
 });
