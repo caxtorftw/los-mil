@@ -31,9 +31,10 @@ document.addEventListener("DOMContentLoaded", () => {
     "cellAlign": "left",
     "friction": 1,
     "selectedAttraction": 0.2,
-    "autoPlay": 1000,
+    "autoPlay": 4000,
     "pageDots": false,
     "prevNextButtons": false,
+    "wrapAround": true,
   });
 
 });

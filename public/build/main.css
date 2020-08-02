@@ -18046,7 +18046,7 @@ body {
 }
 
 header {
-  height: 80vh;
+  height: 100vh;
   background-image: linear-gradient(to right, rgba(0,0,0,.533), rgba(0,0,0,.533)), url('../../src/img/slider/local1.jpeg');
 }
 
@@ -18059,6 +18059,7 @@ header {
 .nav-is-fixed nav {
   position: fixed;
   background-image: linear-gradient(to bottom, rgba(0,0,0,.3), rgba(0,0,0,.3));
+  z-index: 50;
 }
 
 .nav-btn {
