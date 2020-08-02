@@ -18046,13 +18046,23 @@ body {
 }
 
 header {
-  /* object-fit: cover; */
+  height: 80vh;
   background-image: linear-gradient(to right, rgba(0,0,0,.533), rgba(0,0,0,.533)), url('../../src/img/slider/local1.jpeg');
+}
+
+.skewed {
+  -webkit-clip-path: polygon(0 0, 100% 0%, 100% calc(95% - 15vmin), 0% 90%);
+          clip-path: polygon(0 0, 100% 0%, 100% calc(95% - 15vmin), 0% 90%);
+  margin-bottom: -15vmin;
 }
 
 .nav-is-fixed nav {
   position: fixed;
   background-image: linear-gradient(to bottom, rgba(0,0,0,.3), rgba(0,0,0,.3));
+}
+
+.nav-btn {
+  border-color: var(--main-red);
 }
 
 .nav-btn.is-active span:nth-child(2) {
@@ -18085,14 +18095,12 @@ header {
   width: 50%;
 }
 
-@-webkit-keyframes is-active {
-  0% {
-  }
+.flickity-button {
+  background-color: transparent;
 }
 
-@keyframes is-active {
-  0% {
-  }
+.flickity-button-icon {
+  fill: white;
 }
 
 @media (min-width: 640px) {
@@ -87522,3 +87530,4 @@ header {
             animation: bounce 1s infinite;
   }
 }
+

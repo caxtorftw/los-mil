@@ -27,4 +27,13 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   })
 
+  const flickTop = new Flickity( '.carousel', {
+    "cellAlign": "left",
+    "friction": 1,
+    "selectedAttraction": 0.2,
+    "autoPlay": 1000,
+    "pageDots": false,
+    "prevNextButtons": false,
+  });
+
 });
