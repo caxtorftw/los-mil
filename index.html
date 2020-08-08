@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Los Mil | Distribuidora</title>
-  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700">
   <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.min.css" />
   <link rel="stylesheet" href="./node_modules/flickity/dist/flickity.min.css">
   <link rel="stylesheet" href="./public/build/main.css" />
@@ -15,12 +15,12 @@
 
   <!-- START WELCOME SECTION -->
   <!-- Navbar -->
-  <nav class="absolute top-0 left-0 right-0 h-20 z-10">
+  <nav class="fixed top-0 left-0 w-full z-10">
 
-    <div class="container mx-auto px-4 h-full flex items-center justify-between">
+    <div class="container mx-auto px-4 h-20 flex justify-between space-x-4">
 
       <!-- Logo -->
-      <a href="#">
+      <a href="#" class="flex items-center">
         <img class="nav__logo h-10 invisible" src="./src/img/logo.svg" alt="los mil menu logo" />
       </a>
 
@@ -33,18 +33,33 @@
       </div>
 
       <!-- Large screen Menu -->
-      <ul class="nav__menu hidden md:flex text-lg text-gray-400 uppercase space-x-4">
+      <ul class="nav__menu hidden md:flex items-center text-lg text-gray-100 uppercase space-x-4">
         <li>
-          <a href="#" class="relative px-3 py-1 hover:text-white transition-all duration-200">Inicio</a>
+          <a href="#" class="relative transition-all duration-200">Inicio</a>
         </li>
         <li>
-          <a href="#" class="relative px-3 py-1 hover:text-white transition-all duration-200">Marcas</a>
+          <a href="#" class="relative transition-all duration-200">Marcas</a>
         </li>
         <li>
-          <a href="#" class="relative px-3 py-1 hover:text-white transition-all duration-200">Ubicación</a>
+          <a href="#" class="relative transition-all duration-200">Ubicación</a>
         </li>
         <li>
-          <a href="#" class="relative px-3 py-1 hover:text-white transition-all duration-200">Contacto</a>
+          <a href="#" class="relative transition-all duration-200">Contacto</a>
+        </li>
+      </ul>
+
+      <ul class="hidden md:flex items-center text-xl text-gray-400 uppercase space-x-2">
+        <li>
+          <a href="#"><i class="fab fa-facebook transform hover:scale-110 hover:text-white transition-all duration-200"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fab fa-instagram transform hover:scale-110 hover:text-white transition-all duration-200"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fab fa-twitter transform hover:scale-110 hover:text-white transition-all duration-200"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fab fa-youtube transform hover:scale-110 hover:text-white transition-all duration-200"></i></a>
         </li>
       </ul>
 
@@ -54,12 +69,22 @@
 
   </nav>
 
-  <header class="h-screen w-screen skewed bg-cover bg-top bg-fixed flex flex-col items-center justify-center">
+  <header class="h-screen w-screen flex bg-hero-img bg-cover bg-center bg-fixed">
+    <div class="w-1/2 h-full hidden md:flex items-center justify-center">
+      <div class="">
+        <img class="color border-t-2 border-b-2 p-4 h-40 lg:h-56" src="./src/img/logo2.svg" alt="los mil hero logo" style="border-color: var(--main-red);"/>
+      </div>
+      <div class="">
+
+      </div>
+    </div>
+
+
 
     <!-- Hero Content -->
-    <div class="container mx-auto px-4">
+    <div class="w-full bg-hero-img bg-cover bg-right bg-fixed md:hidden flex items-center justify-center">
       <div>
-        <img class="hero__logo h-40 mx-auto" src="./src/img/logo2.svg" alt="los mil hero logo" />
+        <img class="color border-t-2 border-b-2 p-4 h-40" src="./src/img/logo2.svg" style="border-color: var(--main-red);" alt="los mil hero logo" />
       </div>
     </div>
 
@@ -122,74 +147,7 @@
   </main>
 
   <section>
-    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore, delectus amet cumque saepe aliquam suscipit
-      minus laudantium et assumenda quidem impedit id nemo ipsum blanditiis ab doloremque recusandae iste, corrupti
-      illum quisquam! Sapiente in voluptas voluptate corrupti aspernatur culpa et maiores modi exercitationem. Quibusdam
-      distinctio voluptates voluptas quidem? Autem, culpa beatae adipisci unde in sequi? Eos vitae, amet dolorem aliquam
-      deserunt suscipit officia, ut atque tempore modi ratione. Nemo soluta ab ad quam veritatis praesentium quos
-      aperiam dolorem? Asperiores sint debitis tenetur placeat, amet quidem ullam tempore ut, molestias aliquam non
-      voluptates ducimus hic esse ad a veritatis quasi impedit tempora fugiat maiores. Ea officiis illo porro maiores,
-      obcaecati nostrum asperiores quo, officia ullam nihil a eos deserunt. Blanditiis id nesciunt illo quibusdam? Vitae
-      nihil ut maxime dolorem harum laborum tempora corrupti reprehenderit commodi magni sit, cupiditate aspernatur,
-      porro ad temporibus sequi culpa quibusdam corporis, nesciunt quaerat. Autem quae minus aperiam animi minima
-      consectetur nobis qui labore nihil porro ut dignissimos temporibus tempora saepe odit facilis esse molestiae
-      maxime dolores quasi, necessitatibus ducimus asperiores perspiciatis. Quaerat, debitis? Dolorum, nesciunt
-      accusantium? Eaque, ducimus necessitatibus eos amet sunt unde sequi ratione incidunt omnis dicta ex quo fugit
-      perferendis iure harum iste possimus? Fugit sunt voluptates, aliquid, soluta pariatur voluptatibus nisi culpa
-      repellat animi, magni laboriosam a! Optio cum, perferendis, eaque recusandae molestiae, in modi quis dolorum ipsa
-      reprehenderit cupiditate odit pariatur neque voluptates nulla dolorem dolores illo esse et? Eius ea dolores aut
-      itaque accusantium esse incidunt unde sint veritatis, aliquam maxime quis, mollitia quidem explicabo quasi neque!
-      Consequatur distinctio animi voluptatum incidunt, possimus blanditiis perferendis modi nostrum explicabo at cum
-      cupiditate magni corrupti ad labore voluptate ab quis maiores rerum doloremque molestiae tempora inventore
-      deserunt. Architecto enim rem voluptatem, similique dignissimos voluptates voluptatibus maxime numquam. Ducimus
-      cumque corporis officiis? In officia debitis aspernatur! Cupiditate molestias mollitia alias repellat fugiat cum
-      sint! Praesentium, similique! Alias voluptatum incidunt deserunt beatae maxime quo, perferendis ad praesentium
-      suscipit quasi expedita iste commodi veritatis velit corrupti tenetur dolorem sapiente voluptate quidem saepe
-      reprehenderit repellendus accusamus eaque. Dignissimos, vel? Repellendus, non iure? Deleniti, eos reiciendis
-      voluptatum incidunt, nemo quam optio maxime beatae odit natus nobis tenetur hic non. Inventore, possimus iure
-      delectus quidem ducimus maiores voluptatibus? Consectetur dolores voluptates dolor repellendus, eaque dignissimos
-      consequuntur excepturi, dicta minima, eligendi similique possimus sed! Et soluta cum tenetur quis ea laborum
-      deserunt, tempora eveniet nam quia voluptatibus eum sunt molestias totam! Eos nam aliquid nesciunt. Error facilis
-      distinctio, maiores illum officia assumenda ratione, non rerum nemo neque officiis quia commodi fuga eveniet
-      dolore dolores sunt quod ea? Quod quibusdam cum, optio atque ad ducimus nesciunt! Ipsum deleniti minima hic
-      inventore id quidem velit natus, illum placeat esse itaque neque recusandae sed perferendis optio eos! Labore
-      maiores cumque illum amet veniam, distinctio, tempora nostrum autem cum esse eum earum, vitae quaerat. Ab dolore
-      quis ex aperiam officia quidem cupiditate. Itaque nobis vel provident perspiciatis officiis aliquid, incidunt
-      sapiente dolor minima facere consequuntur exercitationem ipsam autem quas impedit consectetur dolore possimus sit?
-      Impedit aliquam asperiores sit eos praesentium ipsa ex ratione quas rem ipsam, aut earum distinctio vero veniam,
-      reiciendis modi exercitationem saepe voluptatum cupiditate ad. Quos quod quasi impedit nostrum repudiandae.
-      Commodi nulla odio fuga fugit totam? Quae ipsa architecto debitis et nisi distinctio eum quasi quod animi, qui
-      praesentium dignissimos. Eligendi aperiam voluptatum nam odit dolores ea dolorem accusamus assumenda eius
-      inventore dicta necessitatibus asperiores nisi harum labore explicabo temporibus ipsum autem obcaecati recusandae,
-      animi natus quia perferendis. Saepe et adipisci corrupti fugiat impedit commodi officiis porro at sint
-      voluptatibus, aliquam ipsa, enim soluta molestiae illum est voluptas inventore culpa expedita rem, mollitia sunt
-      eum praesentium! Quas sit, illum vitae asperiores aperiam laboriosam alias ab harum perspiciatis deleniti autem
-      iusto soluta. At repudiandae impedit quibusdam aspernatur eveniet quam aliquam reiciendis dolorem pariatur,
-      nesciunt quidem unde qui iure, doloremque repellendus saepe porro nobis maiores fugit, in quo esse sapiente a. Non
-      eaque ratione odit beatae ab nemo totam ea voluptas voluptatem minima repellendus error, impedit dolores saepe,
-      quisquam ad tenetur quibusdam ipsam. Expedita soluta commodi maiores adipisci illum, ab nesciunt iure facere
-      perferendis officiis, deserunt architecto rerum in vel fuga neque nihil cumque porro sunt? Magnam quae aperiam id.
-      Tenetur repellat quam officiis quos. Blanditiis laborum sunt molestiae eaque magni labore sapiente aliquam
-      quibusdam similique sed ea, modi veniam officia dicta a explicabo perferendis possimus quis iure, aspernatur
-      consectetur tempore. Reiciendis error quia consequatur assumenda, veritatis temporibus iste corrupti excepturi
-      dolore quam fugiat quibusdam. Aperiam, consequuntur beatae impedit vel dicta aliquam at deleniti praesentium quasi
-      fugit autem placeat, dolore cupiditate dolorum optio eos accusamus perspiciatis blanditiis laudantium ut rerum
-      modi, doloribus quis! Doloribus mollitia quae atque, enim quaerat assumenda illum dolorum delectus maxime ipsam,
-      animi omnis. Neque, accusantium repudiandae! Accusamus officiis id soluta voluptates modi similique deleniti
-      corporis molestiae earum atque laudantium hic blanditiis molestias amet, itaque fugit sed voluptate maiores
-      praesentium quidem aut porro, ipsa temporibus? Excepturi neque earum eum saepe illum, dolore ducimus ratione ut
-      minima laborum, voluptates facilis, est laudantium ea iste accusamus unde. Omnis quidem pariatur facere illum ad
-      sunt repellat vel, temporibus error voluptatibus veritatis at unde excepturi accusamus doloribus maxime, quas
-      cupiditate nihil eum labore impedit! Consequatur impedit ipsum voluptate nulla esse nam fugit maiores, eius
-      aspernatur ipsam, dicta cum, in distinctio rem? Mollitia iure tempore laudantium illo necessitatibus architecto
-      maxime vero maiores delectus ut unde cumque aspernatur, quidem, dignissimos ea perferendis at iusto deserunt
-      possimus obcaecati incidunt harum tempora? Atque aspernatur totam iure facilis sit unde nesciunt, autem molestiae
-      minus suscipit a exercitationem id esse aperiam, impedit ea ad? Modi maxime optio ab alias veniam? Rerum fugit
-      perspiciatis repellendus praesentium assumenda corporis temporibus iste repellat dolore dolor accusantium iusto,
-      officiis, ea adipisci ratione harum atque necessitatibus architecto cum quas. Consectetur, quam atque impedit
-      pariatur magnam delectus maxime ullam quos eveniet tempore! Harum optio dolores, iusto debitis aspernatur nihil
-      architecto omnis nulla excepturi porro sapiente quam eius minus, culpa atque commodi quas? Hic, doloremque a? Ut
-      laudantium voluptate consequatur voluptas deleniti beatae quod, placeat esse.</p>
+    
   </section>
 
   <script src="./node_modules/flickity/dist/flickity.pkgd.min.js"></script>

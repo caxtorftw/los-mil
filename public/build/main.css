@@ -18038,16 +18038,16 @@ video {
 }
 
 :root {
-  --main-red: #fc4246;
+  --main-red: #ee4445;
+  --font-montserrat: Montserrat, sans-serif;
 }
 
 body {
-  font-family: 'Lato', sans-serif;
+  font-family: var(--font-montserrat);
 }
 
-header {
-  height: 100vh;
-  background-image: linear-gradient(to right, rgba(0,0,0,.533), rgba(0,0,0,.533)), url('../../src/img/slider/local1.jpeg');
+.bg-hero-img {
+  background-image: linear-gradient(to right, rgba(0,0,0,.7), rgba(0,0,0,.7)), url('../../src/img/slider/local1.jpeg');
 }
 
 .skewed {
@@ -18057,7 +18057,6 @@ header {
 }
 
 .nav-is-fixed nav {
-  position: fixed;
   background-image: linear-gradient(to bottom, rgba(0,0,0,.3), rgba(0,0,0,.3));
   z-index: 50;
 }
@@ -18078,6 +18077,10 @@ header {
   transform: translateY(-10px) rotate(-45deg);
 }
 
+.nav__menu a:hover {
+  color: var(--main-red);
+}
+
 .nav__menu a::before {
   content: "";
   display: inline-block;
@@ -18085,7 +18088,7 @@ header {
   bottom: -5px;
   left: 50%;
   transform: translate3d(-50%, 0, 0);
-  height: .25rem;
+  height: 2px;
   width: 0%;
   border-radius: 5px;
   background-color: var(--main-red);
@@ -18102,6 +18105,45 @@ header {
 
 .flickity-button-icon {
   fill: white;
+}
+
+.color {
+  -webkit-animation: fadeInColor 2s ease-in-out;
+          animation: fadeInColor 2s ease-in-out;
+}
+
+@-webkit-keyframes fadeInColor {
+  0% {
+    opacity: 0;
+    -webkit-filter: grayscale(.7);
+            filter: grayscale(.7);
+  }
+
+  75% {
+    opacity: 1;
+  }
+
+  100% {
+    -webkit-filter: grayscale(0);
+            filter: grayscale(0);
+  }
+}
+
+@keyframes fadeInColor {
+  0% {
+    opacity: 0;
+    -webkit-filter: grayscale(.7);
+            filter: grayscale(.7);
+  }
+
+  75% {
+    opacity: 1;
+  }
+
+  100% {
+    -webkit-filter: grayscale(0);
+            filter: grayscale(0);
+  }
 }
 
 @media (min-width: 640px) {
