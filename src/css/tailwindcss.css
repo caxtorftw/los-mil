@@ -47,7 +47,8 @@ body {
   transform: translateY(-10px) rotate(-45deg);
 }
 
-.nav__menu a:hover {
+.nav__menu a:hover,
+.social__menu a:hover .fab {
   color: var(--main-red);
 }
 
