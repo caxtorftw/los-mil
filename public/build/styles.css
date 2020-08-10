@@ -79,22 +79,22 @@ body {
 }
 
 .bg-hero-1 {
-  background-image: linear-gradient(to right, rgba(0,0,0,.8) 20%, rgba(0,0,0,.6)), 
-                    url('./../../src/img/local/01a.jpg');
+  background-image: linear-gradient(to right, rgba(0,0,0,.8) 25%, rgba(0,0,0,.6)), 
+  url('./../../src/img/local/opt/01.jpg');
 }
 
 .bg-hero-2 {
-  background-image: linear-gradient(to right, rgba(0,0,0,.5) 20%, rgba(0,0,0,.3)), 
-                    url('./../../src/img/local/02.jpeg');
+  background-image: linear-gradient(to right, rgba(0,0,0,.8) 25%, rgba(0,0,0,.6)), 
+  url('./../../src/img/local/opt/02.jpg');
 }
 
 .bg-hero-3 {
-  background-image: linear-gradient(to right, rgba(0,0,0,.8) 20%, rgba(0,0,0,.6)), 
-                    url('./../../src/img/productos/01.jpeg');  
+  background-image: linear-gradient(to right, rgba(0,0,0,.8) 25%, rgba(0,0,0,.6)), 
+  url('./../../src/img/local/opt/03.jpg');
 }
 
 .bg-hero-4 {
-  background-image: linear-gradient(to right, rgba(0,0,0,.8) 20%, rgba(0,0,0,.6)), 
+  background-image: linear-gradient(to right, rgba(0,0,0,.8) 25%, rgba(0,0,0,.6)), 
                     url('./../../src/img/productos/02.jpeg');  
 }
 
@@ -103,8 +103,10 @@ body {
                     url('./../../src/img/local/05.jpeg');  
 }
 
-.clip-arrow {
-  clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+.download-ofertas:hover .fa-arrow-alt-circle-down {
+  transition: all .3s ease-in-out;
+  opacity: 1;
+  transform: translateY(0px);
 }
 
 .carousel-hero .flickity-page-dots {
@@ -129,22 +131,5 @@ body {
 
 .flickity-button-icon {
   fill: white;
-}
-
-.color {
-  animation: fadeInColor 2s ease-in-out;
-}
-
-@keyframes fadeInColor {
-  0% {
-    opacity: 0;
-    filter: grayscale(.7);
-  }
-  75% {
-    opacity: 1;
-  }
-  100% {
-    filter: grayscale(0);
-  }
 }
 

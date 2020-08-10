@@ -93,37 +93,36 @@
     <!-- Hero Carousel -->
     <div class="carousel-hero text-gray-100">
 
-      <div class="px-4 w-screen h-screen bg-hero-3 bg-cover bg-center flex items-center text-gray-100 text-center">
+      <div class="px-4 w-screen h-screen bg-hero-1 bg-cover bg-center flex items-center text-gray-100 text-center">
         <div class="py-4 w-4/5 max-w-2xl mx-auto border-t-4 border-b-4 border-primary">
           <h1 class="hero-title leading-none font-bold uppercase">¡El mejor<br class="hidden md:block" /> precio
             mayorista!</h1>
         </div>
       </div>
 
-      <div class="px-4 w-screen h-screen bg-hero-1 bg-cover bg-center flex items-center text-gray-100 text-center">
+      <div class="px-4 w-screen h-screen bg-hero-2 bg-cover bg-center flex items-center text-gray-100 text-center">
         <div class="container mx-auto">
-          <h1 class="title mb-4 font-bold">Hello world</h1>
-          <p class="mb-8">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae ex doloremque natus!</p>
-          <a href="#" class="px-6 py-2 border-2 border-primary">Conocé nuestras ofertas</a>
+          <h1 class="mb-12 hero-title leading-none font-bold uppercase">Conocé nuestras ofertas semanales</h1>
+          <a href="#" class="download-ofertas block py-3 md:w-1/3 mx-auto border-2 border-gray-100 text-gray-100 text-lg hover:bg-primary hover:border-primary flex items-center justify-center hover:font-bold uppercase rounded-full transition-all duration-300"><i class="opacity-0 far fa-arrow-alt-circle-down text-xl mr-2 -ml-2 transform -translate-y-3"></i>Descargar</a>
         </div>
       </div>
 
-      <div class="px-4 w-screen h-screen bg-hero-2 bg-cover bg-center flex items-center">
+      <div class="px-4 w-screen h-screen bg-hero-3 bg-cover bg-center flex items-center">
         <div class="grid grid-rows-2 md:grid-rows-1 md:grid-cols-2 items-center justify-center text-center">
-          <div class="w-5/6 mx-auto bg-primary-opacity text-center md:text-left tracking-tighter">
-            <div class="m-4 border-2 border-gray-100">
+          <div class="w-5/6 mb-4 md:mb-0 mx-auto bg-primary-opacity text-center md:text-left tracking-tighter">
+            <div class="m-2 border-2 border-gray-100">
               <h1 class="px-4 py-8 md:px-8 md:py-16 hero-title-2 leading-none md:leading-tight font-bold uppercase">Todo
                 lo<br class="hidden md:block" /> que necesitás en un solo lugar</h1>
             </div>
           </div>
           <div class="flex md:flex-col items-center space-x-10 md:space-x-0 md:space-y-10">
             <a href="#" class="block w-1/2 p-4 border-t-2 border-b-2 border-primary transition-colors duration-300">
-              <h2 class="mb-4 text-lg leading-none">Sucursal Casanova</h2>
+              <h2 class="mb-4 text-lg leading-none"><i class="fas fa-location-arrow mr-2"></i>Sucursal Casanova</h2>
               <p class="leading-none tracking-tighter subtitle font-bold uppercase">Av. Brig. Gral. Juan Manuel de Rosas
                 6989</p>
             </a>
             <a href="#" class="block w-1/2 p-4 border-t-2 border-b-2 border-primary transition-colors duration-300">
-              <h2 class="mb-4 text-lg leading-none">Sucursal<br class="md:hidden" /> Paso del Rey</h2>
+              <h2 class="mb-4 text-lg leading-none"><i class="fas fa-location-arrow mr-2"></i>Sucursal<br class="md:hidden" /> Paso del Rey</h2>
               <p class="leading-none tracking-tighter subtitle font-bold uppercase">Colectora Sur<br
                   class="md:hidden" /> Acceso Oeste 2134</p>
             </a>
@@ -135,50 +134,58 @@
 
   </header>
 
-  <main>
+  <main class="py-10 md:pb-12">
 
-    <div class="carousel-brands">
+    <div class="container mx-auto px-4">
 
-      <div class="flex">
-        <img class="w-32 h-32 object-contain" src="./src/img/brands/01.jpg" alt="">
-        <img class="w-32 h-32 object-contain" src="./src/img/brands/02.jpg" alt="">
-        <img class="w-32 h-32 object-contain" src="./src/img/brands/03.jpg" alt="">
-        <img class="w-32 h-32 object-contain" src="./src/img/brands/04.jpg" alt="">
+      <h2 class="mb-4 text-2xl font-bold text-center uppercase">Las marcas que nos acompañan</h2>
+
+      <!-- Brands slider -->
+      <div class="carousel-brands w-full bg-white">
+        <div class="w-full grid grid-cols-4 md:grid-cols-8">
+          <img class="w-full h-24 object-contain" src="./src/img/brands/01.jpg" alt="">
+          <img class="w-full h-24 object-contain" src="./src/img/brands/02.jpg" alt="">
+          <img class="w-full h-24 object-contain" src="./src/img/brands/03.jpg" alt="">
+          <img class="w-full h-24 object-contain" src="./src/img/brands/04.jpg" alt="">
+          <img class="w-full h-24 object-contain" src="./src/img/brands/05.jpg" alt="">
+          <img class="w-full h-24 object-contain" src="./src/img/brands/06.jpg" alt="">
+          <img class="w-full h-24 object-contain" src="./src/img/brands/07.jpg" alt="">
+          <img class="w-full h-24 object-contain" src="./src/img/brands/08.jpg" alt="">
+        </div>
+        <div class="w-full grid grid-cols-4 md:grid-cols-8">
+          <img class="w-full h-24 object-contain" src="./src/img/brands/09.jpg" alt="">
+          <img class="w-full h-24 object-contain" src="./src/img/brands/10.jpg" alt="">
+          <img class="w-full h-24 object-contain" src="./src/img/brands/11.jpg" alt="">
+          <img class="w-full h-24 object-contain" src="./src/img/brands/12.jpg" alt="">
+          <img class="w-full h-24 object-contain" src="./src/img/brands/13.jpg" alt="">
+          <img class="w-full h-24 object-contain" src="./src/img/brands/14.jpg" alt="">
+          <img class="w-full h-24 object-contain" src="./src/img/brands/15.jpg" alt="">
+          <img class="w-full h-24 object-contain" src="./src/img/brands/16.jpg" alt="">
+        </div>
+        <div class="w-full grid grid-cols-4 md:grid-cols-8">
+          <img class="w-full h-24 object-contain" src="./src/img/brands/17.jpg" alt="">
+          <img class="w-full h-24 object-contain" src="./src/img/brands/18.jpg" alt="">
+          <img class="w-full h-24 object-contain" src="./src/img/brands/19.jpg" alt="">
+          <img class="w-full h-24 object-contain" src="./src/img/brands/20.jpg" alt="">
+          <img class="w-full h-24 object-contain" src="./src/img/brands/21.jpg" alt="">
+          <img class="w-full h-24 object-contain" src="./src/img/brands/22.jpg" alt="">
+          <img class="w-full h-24 object-contain" src="./src/img/brands/23.jpg" alt="">
+          <img class="w-full h-24 object-contain" src="./src/img/brands/24.jpg" alt="">
+        </div>
+        <div class="w-full grid grid-cols-4 md:grid-cols-8">
+          <img class="w-full h-24 object-contain" src="./src/img/brands/25.jpg" alt="">
+          <img class="w-full h-24 object-contain" src="./src/img/brands/26.jpg" alt="">
+          <img class="w-full h-24 object-contain" src="./src/img/brands/27.jpg" alt="">
+          <img class="w-full h-24 object-contain" src="./src/img/brands/28.jpg" alt="">
+          <img class="w-full h-24 object-contain" src="./src/img/brands/29.jpg" alt="">
+          <img class="w-full h-24 object-contain" src="./src/img/brands/30.jpg" alt="">
+          <img class="w-full h-24 object-contain" src="./src/img/brands/31.jpg" alt="">
+          <img class="w-full h-24 object-contain" src="./src/img/brands/32.jpg" alt="">
+        </div>
       </div>
-
-      <div class="flex">
-        <img class="w-32 h-32 object-contain" src="./src/img/brands/05.jpg" alt="">
-        <img class="w-32 h-32 object-contain" src="./src/img/brands/06.jpg" alt="">
-        <img class="w-32 h-32 object-contain" src="./src/img/brands/07.jpg" alt="">
-        <img class="w-32 h-32 object-contain" src="./src/img/brands/08.jpg" alt="">
-      </div>
-
-      <div class="flex">
-        <img class="w-32 h-32 object-contain" src="./src/img/brands/09.jpg" alt="">
-        <img class="w-32 h-32 object-contain" src="./src/img/brands/10.jpg" alt="">
-        <img class="w-32 h-32 object-contain" src="./src/img/brands/11.jpg" alt="">
-        <img class="w-32 h-32 object-contain" src="./src/img/brands/12.jpg" alt="">
-      </div>
-
-      <div class="flex">
-        <img class="w-32 h-32 object-contain" src="./src/img/brands/13.jpg" alt="">
-        <img class="w-32 h-32 object-contain" src="./src/img/brands/14.jpg" alt="">
-        <img class="w-32 h-32 object-contain" src="./src/img/brands/15.jpg" alt="">
-        <img class="w-32 h-32 object-contain" src="./src/img/brands/16.jpg" alt="">
-      </div>
-
-      <div class="flex">
-        <img class="w-32 h-32 object-contain" src="./src/img/brands/17.jpg" alt="">
-        <img class="w-32 h-32 object-contain" src="./src/img/brands/18.jpg" alt="">
-        <img class="w-32 h-32 object-contain" src="./src/img/brands/19.jpg" alt="">
-        <img class="w-32 h-32 object-contain" src="./src/img/brands/20.jpg" alt="">
-      </div>
-
     </div>
 
   </main>
-
-
 
   <script src="./node_modules/flickity/dist/flickity.pkgd.min.js"></script>
   <script src="./src/js/main.js"></script>
