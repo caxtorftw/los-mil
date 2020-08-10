@@ -4,8 +4,8 @@
   "description": "Los Mil Distribuidora",
   "main": "index.js",
   "scripts": {
-    "buildcss": "postcss src/css/tailwindcss.css -o public/build/main.css",
-    "watch": "postcss src/css/tailwindcss.css -o public/build/main.css --watch"
+    "buildcss": "postcss src/css/tailwindcss.css -o public/build/tailwind.css",
+    "watch": "postcss src/css/tailwindcss.css -o public/build/tailwind.css --watch"
   },
   "repository": {
     "type": "git",

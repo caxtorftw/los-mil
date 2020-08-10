@@ -1,14 +1,14 @@
 document.addEventListener("DOMContentLoaded", () => {
 
   const navBtn = document.querySelector(".nav-btn");
-  const mobileNav = document.querySelector(".mobile-nav");
+  const mobileMenu = document.querySelector(".mobile-menu");
 
   navBtn.addEventListener("click", function (e) {
     this.classList.toggle("is-active");
-    if (mobileNav.classList.contains("-translate-y-full")) {
-      mobileNav.classList.remove("-translate-y-full");
+    if (mobileMenu.classList.contains("-translate-y-full")) {
+      mobileMenu.classList.remove("-translate-y-full");
     } else {
-      mobileNav.classList.add("-translate-y-full");
+      mobileMenu.classList.add("-translate-y-full");
     }
   });
 
@@ -27,7 +27,15 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   })
 
-  const flickTop = new Flickity( '.carousel', {
+  const flickHero = new Flickity( '.carousel-hero', {
+    "friction": 1,
+    "selectedAttraction": 0.2,
+    //"autoPlay": 4000,
+    "prevNextButtons": false,
+    "wrapAround": true,
+  });
+
+  const flickBrands = new Flickity( '.carousel-brands', {
     "cellAlign": "left",
     "friction": 1,
     "selectedAttraction": 0.2,
