@@ -13,24 +13,20 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   const body = document.querySelector('body');
-  const navbar = document.querySelector('nav');
-  const navLogo = document.querySelector('.nav__logo');
-  const heroLogo = document.querySelector('.hero__logo');
+  const nav = document.querySelector('nav');
 
   window.addEventListener('scroll', () => {
-    if (window.scrollY > navbar.offsetHeight) {
+    if (window.scrollY > nav.offsetHeight) {
       body.classList.add('nav-is-fixed');
-      navLogo.classList.remove('invisible');
     } else {
       body.classList.remove('nav-is-fixed');
-      navLogo.classList.add('invisible');
     }
   })
 
   const flickHero = new Flickity( '.carousel-hero', {
     "friction": 1,
     "selectedAttraction": 0.2,
-    //"autoPlay": 4000,
+    "autoPlay": 4000,
     "prevNextButtons": false,
     "wrapAround": true,
   });

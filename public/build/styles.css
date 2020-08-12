@@ -22,7 +22,8 @@ body {
 }
 
 .nav-is-fixed nav {
-  background-image: linear-gradient(to bottom, rgba(0,0,0,.3), rgba(0,0,0,.3));
+  position: fixed;
+  background-color: rgba(0,0,0,.7);
   z-index: 50;
 }
 
@@ -79,28 +80,18 @@ body {
 }
 
 .bg-hero-1 {
-  background-image: linear-gradient(to right, rgba(0,0,0,.8) 25%, rgba(0,0,0,.6)), 
+  background-image: linear-gradient(to bottom, rgba(0,0,0,.7), rgba(0,0,0,.7)), 
   url('./../../src/img/local/opt/01.jpg');
 }
 
 .bg-hero-2 {
-  background-image: linear-gradient(to right, rgba(0,0,0,.8) 25%, rgba(0,0,0,.6)), 
+  background-image: linear-gradient(to bottom, rgba(0,0,0,.7), rgba(0,0,0,.7)), 
   url('./../../src/img/local/opt/02.jpg');
 }
 
 .bg-hero-3 {
-  background-image: linear-gradient(to right, rgba(0,0,0,.8) 25%, rgba(0,0,0,.6)), 
+  background-image: linear-gradient(to bottom, rgba(0,0,0,.5), rgba(0,0,0,.5)), 
   url('./../../src/img/local/opt/03.jpg');
-}
-
-.bg-hero-4 {
-  background-image: linear-gradient(to right, rgba(0,0,0,.8) 25%, rgba(0,0,0,.6)), 
-                    url('./../../src/img/productos/02.jpeg');  
-}
-
-.bg-hero-5 {
-  background-image: linear-gradient(to right, rgba(0,0,0,.8) 20%, rgba(0,0,0,.6)), 
-                    url('./../../src/img/local/05.jpeg');  
 }
 
 .download-ofertas:hover .fa-arrow-alt-circle-down {
@@ -131,5 +122,56 @@ body {
 
 .flickity-button-icon {
   fill: white;
+}
+
+.my-grid {
+  /* media 768 */
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas: 
+    "gmap-1"
+    "suc-1"
+    "gmap-2" 
+    "suc-2";
+}
+
+@media (min-width: 768px) {
+  .my-grid {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "gmap-1 suc-1"
+    "suc-2  g-map2";
+  }
+}
+
+.gmap-1 {
+  grid-area: "gmap-1";
+}
+
+.gmap-2 {
+  grid-area: "gmap-2";
+}
+
+.sucursal-1 {
+  grid-area: "suc-1";
+}
+
+.sucursal-2 {
+  grid-area: "suc-2";
+}
+
+.gmap-responsive {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 400px;
+}
+
+.gmap-responsive iframe {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
