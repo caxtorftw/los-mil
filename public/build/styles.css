@@ -4,6 +4,12 @@
   --font-montserrat: Montserrat, sans-serif;
 }
 
+html {
+  min-height: 100vh;
+  background-color: var(--dark);
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: var(--font-montserrat);
 }
@@ -122,42 +128,6 @@ body {
 
 .flickity-button-icon {
   fill: white;
-}
-
-.my-grid {
-  /* media 768 */
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-areas: 
-    "gmap-1"
-    "suc-1"
-    "gmap-2" 
-    "suc-2";
-}
-
-@media (min-width: 768px) {
-  .my-grid {
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas: 
-    "gmap-1 suc-1"
-    "suc-2  g-map2";
-  }
-}
-
-.gmap-1 {
-  grid-area: "gmap-1";
-}
-
-.gmap-2 {
-  grid-area: "gmap-2";
-}
-
-.sucursal-1 {
-  grid-area: "suc-1";
-}
-
-.sucursal-2 {
-  grid-area: "suc-2";
 }
 
 .gmap-responsive {

@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="./node_modules/flickity/dist/flickity.min.css">
   <link rel="stylesheet" href="./public/build/tailwind.css" />
   <link rel="stylesheet" href="./public/build/styles.css" />
+  <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
 </head>
 
 <body class="text-gray-900">
@@ -19,52 +20,54 @@
     <div class="container h-20 mx-auto px-4 flex items-center justify-between">
 
       <!-- Logo -->
-      <a href="#">
-        <img class="h-8 md:h-12" src="./src/img/logo-white.svg" alt="">
+      <a href="#index.html">
+        <img class="logo h-10 md:h-12" src="./src/img/logo-white.svg" alt="">
       </a>
 
       <!-- Burguer Icon -->
-      <a href="#"
-        class="nav-btn relative z-20 lg:hidden py-5 w-20 h-full flex flex-col justify-around cursor-pointer transition-all duration-300">
+      <a href="javascript:void(0)"
+        class="nav-btn relative z-50 lg:hidden py-5 w-20 h-full flex flex-col justify-around cursor-pointer transition-all duration-300">
         <span class="inline-block w-10 h-1 ml-auto bg-gray-100 rounded-full transition-all duration-200"></span>
         <span class="inline-block w-10 h-1 ml-auto bg-gray-100 rounded-full transition-all duration-200"></span>
         <span class="inline-block w-10 h-1 ml-auto bg-gray-100 rounded-full transition-all duration-200"></span>
       </a>
 
       <!-- Large screen Menu -->
-      <ul class="hidden text-lg lg:flex space-x-8 uppercase">
+      <ul class="menu hidden text-lg lg:flex space-x-8 uppercase">
         <li>
-          <a href="#" class="text-white opacity-75 hover:opacity-100 transition-opacity duration-200">inicio</a>
+          <a href="#index.html"
+            class="menu-link text-white opacity-75 hover:opacity-100 transition-opacity duration-200">inicio</a>
         </li>
         <li>
-          <a href="#marcas" class="text-white opacity-75 hover:opacity-100 transition-opacity duration-200">marcas</a>
+          <a href="#brands"
+            class="menu-link text-white opacity-75 hover:opacity-100 transition-opacity duration-200">marcas</a>
         </li>
         <li>
-          <a href="#ubicacion"
-            class="text-white opacity-75 hover:opacity-100 transition-opacity duration-200">ubicación</a>
+          <a href="#location"
+            class="menu-link text-white opacity-75 hover:opacity-100 transition-opacity duration-200">ubicación</a>
         </li>
         <li>
-          <a href="#contacto"
-            class="text-white opacity-75 hover:opacity-100 transition-opacity duration-200">contacto</a>
+          <a href="#contact"
+            class="menu-link text-white opacity-75 hover:opacity-100 transition-opacity duration-200">contacto</a>
         </li>
       </ul>
 
 
       <!-- Mobile Menu -->
       <ul
-        class="mobile-menu lg:hidden fixed z-10 inset-0 w-screen h-screen transform -translate-y-full flex items-center justify-center text-3xl font-bold text-center bg-dark text-gray-100 uppercase transition-all duration-300">
+        class="mobile-menu lg:hidden fixed z-40 inset-0 w-screen h-screen transform -translate-y-full flex items-center justify-center text-3xl font-bold text-center bg-dark text-gray-100 uppercase transition-all duration-300">
         <div>
-          <li>
-            <a href="#">inicio</a>
+          <li class="link">
+            <a href="#index.html">inicio</a>
           </li>
-          <li>
-            <a href="#marcas">marcas</a>
+          <li class="link">
+            <a href="#brands">marcas</a>
           </li>
-          <li>
-            <a href="#ubicacion">ubicación</a>
+          <li class="link">
+            <a href="#location">ubicación</a>
           </li>
-          <li>
-            <a href="#contacto">contacto</a>
+          <li class="link">
+            <a href="#contact">contacto</a>
           </li>
           <ul class="mt-10 flex justify-around text-2xl text-primary">
             <li>
@@ -96,7 +99,8 @@
     <!-- Hero Carousel -->
     <div class="carousel-hero text-gray-100">
 
-      <div class="px-4 w-screen h-screen bg-hero-1 bg-cover bg-center flex items-center text-gray-100 text-center">
+      <div
+        class="first px-4 w-screen h-screen bg-hero-1 bg-cover bg-center flex items-center text-gray-100 text-center">
         <div class="py-4 w-4/5 max-w-2xl mx-auto border-t-4 border-b-4 border-primary">
           <h1 class="hero-title leading-none font-bold uppercase">¡El mejor<br class="hidden md:block" /> precio
             mayorista!</h1>
@@ -105,7 +109,7 @@
 
       <div class="px-4 w-screen h-screen bg-hero-2 bg-cover bg-center flex items-center text-gray-100 text-center">
         <div class="container mx-auto">
-          <h1 class="mb-12 hero-title leading-none font-bold uppercase">Conocé nuestras ofertas semanales</h1>
+          <h1 class="test mb-12 hero-title leading-none font-bold uppercase">Conocé nuestras ofertas semanales</h1>
           <a href="#"
             class="download-ofertas block py-3 md:w-1/3 mx-auto border-2 border-gray-100 text-gray-100 text-lg hover:bg-primary hover:border-primary flex items-center justify-center hover:font-bold uppercase rounded-full transition-all duration-300"><i
               class="opacity-0 far fa-arrow-alt-circle-down text-xl mr-2 -ml-2 transform -translate-y-3"></i>Descargar</a>
@@ -122,16 +126,16 @@
             </div>
           </div>
           <div class="flex md:flex-col items-center space-x-10 md:space-x-0 md:space-y-16">
-            <a href="#"
-              class="block p-4 w-1/2 md:w-3/5 border-t-2 border-b-2 border-primary transition-colors duration-300">
+            <a href="#suc-casanova"
+              class="block p-4 w-1/2 md:w-3/5 border-t-2 border-b-2 border-primary transition-all duration-300 transform hover:scale-110">
               <h2 class="mb-4 text-md lg:text-lg leading-none"><i class="fas fa-location-arrow mr-2"></i>Sucursal<br
                   class="lg:hidden" /> Casanova</h2>
               <p class="leading-none tracking-tighter subtitle font-bold uppercase">Av. Brig. Gral. Juan <br
                   class="hidden md:block"> Manuel de Rosas
                 6989</p>
             </a>
-            <a href="#"
-              class="block p-4 w-1/2 md:w-3/5 border-t-2 border-b-2 border-primary transition-colors duration-300">
+            <a href="#suc-pdr"
+              class="block p-4 w-1/2 md:w-3/5 border-t-2 border-b-2 border-primary transition-all duration-300 transform hover:scale-110">
               <h2 class="mb-4 text-md lg:text-lg leading-none"><i class="fas fa-location-arrow mr-2"></i>Sucursal<br
                   class="lg:hidden" /> Paso del Rey</h2>
               <p class="leading-none tracking-tighter subtitle font-bold uppercase">Colectora Sur<br /> Acceso Oeste
@@ -145,17 +149,18 @@
 
   </header>
 
-  <main id="marcas" class="py-16 md:py-24 bg-white">
+  <main id="brands" class="pt-16 md:py-24 bg-white">
 
     <div class="container mx-auto px-4">
 
-      <div class="md:max-w-2xl mx-auto bg-primary text-gray-100">
-        <h2 class="mb-8 py-4 text-3xl font-bold leading-none text-center uppercase">Las marcas<br /> que nos acompañan
+      <div class="heading md:max-w-2xl mx-auto bg-primary text-gray-100">
+        <h2 class="mb-16 py-4 text-3xl font-bold leading-none text-center uppercase">Las marcas<br /> que nos
+          acompañan
         </h2>
       </div>
 
       <!-- Brands slider -->
-      <div class="mb-10 carousel-brands w-full">
+      <div class="mb-0 carousel-brands w-full">
         <div class="w-full grid grid-cols-4 md:grid-cols-8">
           <img class="w-full h-20 md:h-24 object-contain" src="./src/img/brands/01.jpg" alt="">
           <img class="w-full h-20 md:h-24 object-contain" src="./src/img/brands/02.jpg" alt="">
@@ -198,89 +203,172 @@
         </div>
       </div>
 
-      <div class="grid sm:grid-cols-2 md:grid-cols-4">
-        <img class="h-64 w-full object-cover" src="./src/img/productos/opt/01.jpg" alt="">
-        <img class="h-64 w-full object-cover" src="./src/img/productos/opt/02.jpg" alt="">
-        <img class="h-64 w-full object-cover" src="./src/img/productos/opt/03.jpg" alt="">
-        <img class="h-64 w-full object-cover" src="./src/img/productos/opt/04.jpg" alt="">
-        <img class="h-64 w-full object-cover" src="./src/img/productos/opt/05.jpg" alt="">
-        <img class="h-64 w-full object-cover" src="./src/img/productos/opt/07.jpg" alt="">
-        <img class="h-64 w-full object-cover" src="./src/img/productos/opt/08.jpg" alt="">
-        <img class="h-64 w-full object-cover" src="./src/img/productos/opt/10.jpg" alt="">
-      </div>
-
     </div>
 
   </main>
 
-  <section id="ubicacion" class="py-20 bg-primary text-gray-100">
+  <div class="relative h-32 w-full skewed bg-white">
+
+  </div>
+
+  <section id="location" class="py-16 md:py-24 bg-primary text-gray-100">
 
     <div class="container mx-auto px-4">
 
-      <div class="md:max-w-2xl mx-auto bg-dark text-gray-100">
+      <div class="heading md:max-w-2xl mx-auto bg-dark text-gray-100">
         <h2 class="mb-8 py-4 text-3xl font-bold text-center uppercase">Dónde encontrarnos</h2>
       </div>
 
+      <div class="grid md:grid-cols-2 gap-8">
 
-      <div class="my-grid">
-
-        <div class="gmap-responsive gmap-1 gmap-">
+        <div id="suc-casanova" class="gmap-responsive gmap-1">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3280.029852516514!2d-58.585519085204155!3d-34.70442698043357!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc66e08e15cbf%3A0xe7f662007c41eba!2sDistribuidora%20Los%20Mil!5e0!3m2!1ses!2sar!4v1597126892113!5m2!1ses!2sar"
             frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
         </div>
 
-        <div class="sucursal-1 flex items-center">
-          <div class="border-t-2 border-b-2">
+        <div class="relative flex items-center">
+          <div class="w-full p-4 border-t-2 border-b-2 text-center md:text-left space-y-4">
             <h3 class="text-2xl font-bold uppercase">Sucursal Casanova</h3>
             <div>
-              <h4 class="font-bold uppercase"><i class="fas fa-clock"></i> Horario</h4>
+              <h4 class="font-bold uppercase"><i class="fas fa-map-marker-alt mr-2"></i> Dirección</h4>
+              <p>Av. Brig. Gral. Juan Manuel de Rosas 6989, B1765AAR Isidro Casanova, Buenos Aires</p>
+            </div>
+            <div>
+              <h4 class="font-bold uppercase"><i class="fas fa-clock mr-2"></i> Horario</h4>
               <p>Lunes a Viernes de 7:00 a 16:00. Sábado de 7:00 a 14:00</p>
             </div>
-            <div>
-              <h4 class="font-bold uppercase"><i class="fas fa-phone"></i> Teléfono</h4>
-              <p>(011) 4625-3698</p>
-            </div>
-            <div>
-              <h4 class="font-bold uppercase"><i class="fas fa-map-marker-alt"></i> Dirección</h4>
-              <p>Av. Brig. Gral. Juan Manuel de Rosas 6989, B1765AAR Isidro Casanova, Buenos Aires</p>
+            <div class="flex items-center justify-between">
+              <div class="">
+                <h4 class="font-bold uppercase"><i class="fas fa-mobile"></i> Teléfono</h4>
+                <p>11-6983-3853</p>
+              </div>
+              <a class=""
+                href="https://api.whatsapp.com/send?phone=5491169833853&text=Hola,%20me%20contacto%20desde%20el%20sitio%20web..."
+                target="_blank">
+                <img class="h-12 transform hover:scale-125" src="./src/img/whatsapp.svg" src="./src/img/whatsapp.svg"
+                  alt="">
+              </a>
             </div>
           </div>
         </div>
 
-        <div class="gmap-responsive gmap-2">
+        <div id="suc-pdr" class="gmap-responsive gmap-2">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.879501041302!2d-58.74960084932809!3d-34.63248526643159!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bc9503aabe617f%3A0x36cbcea97f31ba42!2sDistribuidora%20Los%20Mil!5e0!3m2!1ses!2sar!4v1597089396492!5m2!1ses!2sar"
             frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
         </div>
 
-        <div class="sucursal-2 flex items-center">
-          <div class="border-t-2 border-b-2">
+        <div class="relative flex items-center">
+          <div class="w-full p-4 border-t-2 border-b-2 text-center md:text-left space-y-4">
             <h3 class="text-2xl font-bold uppercase">Sucursal Paso del Rey</h3>
-            <div>
-              <h4 class="font-bold uppercase"><i class="fas fa-clock"></i> Horario</h4>
-              <p>Lunes a Viernes de 7:00 a 16:00.<br /> Sábado de 7:00 a 14:00</p>
-            </div>
-            <div>
-              <h4 class="font-bold uppercase"><i class="fas fa-phone"></i> Teléfono</h4>
-              <p>(011) 6431-6703</p>
-            </div>
-            <div>
-              <h4 class="font-bold uppercase"><i class="fas fa-map-marker-alt"></i> Dirección</h4>
+            <div class="">
+              <h4 class="font-bold uppercase"><i class="fas fa-map-marker-alt mr-2"></i> Dirección</h4>
               <p>Colectora Sur Acceso Oeste 2134, B2134 Paso del Rey, Buenos Aires.</p>
+            </div>
+            <div class="">
+              <h4 class="font-bold uppercase"><i class="fas fa-clock mr-2"></i> Horario</h4>
+              <p>Lunes a Viernes de 7:00 a 16:00. Sábado de 7:00 a 14:00</p>
+            </div>
+            <div class="flex items-center justify-between">
+              <div>
+                <h4 class="font-bold uppercase"><i class="fas fa-mobile mr-2"></i> Teléfono</h4>
+                <p>11-6431-6703</p>
+              </div>
+              <a class=""
+                href="https://api.whatsapp.com/send?phone=5491164316703&text=Hola,%20me%20contacto%20desde%20el%20sitio%20web..."
+                target="_blank">
+                <img class="h-12 transform hover:scale-125" src="./src/img/whatsapp.svg">
+              </a>
             </div>
           </div>
         </div>
 
       </div>
 
-
     </div>
 
+  </section>
+
+  <section id="contact" class="pt-20 pb-10 bg-dark text-gray-100">
+
+    <div class="container mx-auto px-4">
+
+      <div class="heading relative z-10 md:max-w-2xl mx-auto bg-primary">
+        <h2 class="mb-8 py-4 text-3xl font-bold leading-none text-center uppercase">
+          Contactanos
+        </h2>
+      </div>
+
+      <form
+        class="-mt-16 max-w-4xl mx-auto grid grid-cols-2 gap-4 border-2 border-primary px-10 pt-16 pb-6 text-gray-900"
+        method="POST" action="http://formspree.io/info@losmil.com">
+        <input class="p-2 col-span-2 md:col-span-1" type="text" name="nombre" id="name" placeholder="Nombre">
+        <input class="p-2 col-span-2 md:col-span-1" type="email" name="email" id="email" placeholder="Email">
+        <textarea class="p-2 col-span-2" name="mensaje" id="mensaje" cols="15" rows="5"
+          placeholder="Mensaje"></textarea>
+        <input
+          class="mt-4 p-2 col-span-2 w-full md:w-2/3 mx-auto border-2 border-primary rounded-full bg-dark text-primary font-bold text-lg hover:border-primary hover:bg-primary hover:text-gray-100 transition-colors duration-300 cursor-pointer uppercase"
+          type="submit">
+      </form>
 
     </div>
 
   </section>
+
+  <!-- <hr class="w-1/4 mx-auto"> -->
+
+  <footer class="py-8 bg-dark text-gray-100">
+
+    <div class="container mx-auto px-4">
+
+      <div class="grid md:grid-cols-3 gap-4 items-center">
+
+        <div class="hidden md:block text-center">
+          <a href="#" class="block md:text-left">Información fiscal</a>
+          <a href="#" class="block md:text-left">Preguntas frecuentes</a>
+          <a href="#" class="block md:text-left">Términos y condiciones</a>
+        </div>
+
+        <div class="w-full text-center">
+          <p class="font-semibold uppercase">&copy<span id="year"></span> Los mil | Distribuidora</p>
+          <p>Todos los derechos reservados.</p>
+        </div>
+
+        <ul class="flex items-center justify-center text-primary text-center space-x-4">
+          <li>
+            <a href="https://www.facebook.com/DistribuidoraLosMil/"
+              class="block h-12 w-12 flex items-center justify-center border-2 border-primary rounded-full hover:bg-primary hover:text-gray-100 transition-colors duration-200">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/distribuidoralosmil/"
+              class="block h-12 w-12 flex items-center justify-center border-2 border-primary rounded-full hover:bg-primary hover:text-gray-100 transition-colors duration-200">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#"
+              class="block h-12 w-12 flex items-center justify-center border-2 border-primary rounded-full hover:bg-primary hover:text-gray-100 transition-colors duration-200">
+              <i class="fab fa-whatsapp"></i>
+            </a>
+          </li>
+      </div>
+
+    </div>
+
+    </div>
+
+  </footer>
+
+  <div class="bg-gray-700">
+
+    <div class="container mx-auto px-4">
+      Hecho
+    </div>
+
+  </div>
 
   <script src="./node_modules/flickity/dist/flickity.pkgd.min.js"></script>
   <script src="./src/js/main.js"></script>
