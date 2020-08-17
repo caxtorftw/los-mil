@@ -18,6 +18,10 @@ document.addEventListener("DOMContentLoaded", () => {
     "wrapAround": true,
   });
 
+  gsap.fromTo('.logo', { opacity: 0, translateX: '-50%' }, { duration: .5, delay: .3, opacity: 1, translateX: 0 });
+  gsap.fromTo('.fade-in', { opacity: 0 }, { duration: .5, delay: 1, opacity: 1, stagger: .2 });
+  gsap.fromTo('.mobile-link', { opacity: 0, translateY: '-50%' }, { duration: .5, delay: .2, opacity: 1, translateY: 0, stagger: .2 });
+
   const headings = document.querySelectorAll('.heading');
   
   const options = {
@@ -31,6 +35,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const navBtn = document.querySelector(".nav-btn");
   const mobileMenu = document.querySelector(".mobile-menu");
+  const mobileLinks = document.querySelectorAll(".mobile-menu li");
+  const mobileSocial = document.querySelectorAll(".mobile-menu ul li");
 
   navBtn.addEventListener("click", function (e) {
     this.classList.toggle("is-active");
@@ -40,8 +46,6 @@ document.addEventListener("DOMContentLoaded", () => {
       mobileMenu.classList.add("-translate-y-full");
     }
   });
-
-  const mobileLinks = document.querySelectorAll(".mobile-menu a");
 
   mobileLinks.forEach(mobileLink => {
     mobileLink.addEventListener("click", () => {
