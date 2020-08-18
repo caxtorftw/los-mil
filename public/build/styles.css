@@ -107,7 +107,6 @@ body {
 .download-ofertas:hover .fa-arrow-alt-circle-down,
 .btn-submit:hover .fa-paper-plane,
 button:hover .fa-chevron-right {
-  display: block;
   transition: all .3s ease-in-out;
   opacity: 1;
   transform: translate(0);
