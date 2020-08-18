@@ -18,7 +18,8 @@ document.addEventListener("DOMContentLoaded", () => {
     "wrapAround": true,
   });
 
-  gsap.fromTo('.logo', { opacity: 0, translateX: '-50%' }, { duration: .5, delay: .3, opacity: 1, translateX: 0 });
+  gsap.fromTo('.logo', { opacity: 0, translateX: '-50%' }, { duration: .5, delay: .2, opacity: 1, translateX: 0 });
+  gsap.fromTo('.nav-btn', { opacity: 0, translateX: '50%' }, { duration: .5, delay: .7, opacity: 1, translateX: 0 });
   gsap.fromTo('.fade-in', { opacity: 0 }, { duration: .5, delay: 1, opacity: 1, stagger: .2 });
   gsap.fromTo('.mobile-link', { opacity: 0, translateY: '-50%' }, { duration: .5, delay: .2, opacity: 1, translateY: 0, stagger: .2 });
 

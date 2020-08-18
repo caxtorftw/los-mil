@@ -8,6 +8,7 @@ module.exports = {
     },
   },
   variants: {
+    opacity: ['responsive', 'hover', 'focus', 'group-hover'],
     scale: ['responsive', 'hover', 'focus', 'group-hover'],
   },
   plugins: [],

@@ -33,7 +33,7 @@ body {
 
 .nav-is-fixed nav {
   position: fixed;
-  background-color: rgba(0,0,0,.7);
+  background-color: rgba(0,0,0,.5);
   z-index: 50;
 }
 
@@ -104,10 +104,14 @@ body {
   url('./../../src/img/local/opt/03.jpg');
 }
 
-.download-ofertas:hover .fa-arrow-alt-circle-down {
+.download-ofertas:hover .fa-arrow-alt-circle-down,
+.btn-submit:hover .fa-paper-plane,
+button:hover .fa-chevron-right {
+  display: block;
   transition: all .3s ease-in-out;
   opacity: 1;
-  transform: translateY(0px);
+  transform: translate(0);
+  transition: all .3s ease;
 }
 
 .carousel-hero .flickity-page-dots {
@@ -134,6 +138,18 @@ body {
   fill: white;
 }
 
+.whatsapp:hover::before {
+  opacity: 1;
+  position: absolute;
+  content: attr(data-tooltip);
+  top: 0;
+  left: 0;
+  transform: translate(-5%, -100%);
+  font-size: .8rem;
+  font-weight: bold;
+  color: green;
+}
+
 .gmap-responsive {
   overflow: hidden;
   padding-bottom: 56.25%;
@@ -149,16 +165,4 @@ body {
   left: 0;
 }
 
-
-
-@media (min-width: 720px) {
-  .filter-gray {
-    filter: grayscale(1);
-    transition: all .2s ease-in-out;
-  }
-
-  .filter-gray:hover {
-    filter: grayscale(0); 
-  }
-}
 
